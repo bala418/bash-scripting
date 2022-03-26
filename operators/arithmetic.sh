@@ -1,0 +1,25 @@
+echo -n "Enter 2 numbers"
+read a b
+echo "$a + $b = $((a+b))"
+echo "$a - $b = $((a-b))"
+echo "$a * $b = $((a*b))"
+echo "$a / $b = $((a/b))"
+echo "$a % $b = $((a%b))"
+echo "$a ** $b = $((a**b))"
+echo "$a << $b = $((a<<b))"
+echo "$a >> $b = $((a>>b))"
+# & : bitwise and operator
+echo "$a & $b = $((a&b))"
+# | : bitwise or operator
+echo "$a | $b = $((a|b))"
+# ^ : bitwise xor operator
+echo "$a ^ $b = $((a^b))"
+echo "$a && $b = $((a&&b))"
+echo "$a || $b = $((a||b))"
+echo "$a > $b = $((a>b))"
+echo "$a < $b = $((a<b))"
+echo "$a == $b = $((a==b))"
+echo "$a != $b = $((a!=b))"
+echo "$a >= $b = $((a>=b))"
+echo "$a <= $b = $((a<=b))"
+echo "$a = $b = $((a=b))"
