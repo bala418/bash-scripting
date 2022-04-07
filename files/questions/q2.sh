@@ -11,7 +11,6 @@ str=""
 i=0
 while IFS= read -r line; do
     fl=${line:$i:1}
-    echo "The first letter of each line is : $fl"
     str="${str}${fl}"
     i=$((i + 1))
     
