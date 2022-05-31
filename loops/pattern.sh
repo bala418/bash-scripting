@@ -5,9 +5,18 @@ n=${#str}
 # print the string in triangle format
 for (( i=1; i<=$n; i++ ))
 do
-    for (( j=1; j<=$i; j++ ))
+    for (( j=0; j<$i; j++ ))
     do
-        echo -n "${str:$j-1:1}"
+        echo -n "${str:$j:1}"
+    done
+    echo
+done
+
+for (( i=0; i<=$n; i++ ))
+do
+    for (( j=0; j<$i; j++ ))
+    do
+        echo -n "*"
     done
     echo
 done

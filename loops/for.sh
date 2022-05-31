@@ -11,8 +11,6 @@ do
 done
 echo "Sum of $n numbers is $sum"
 
-echo
-
 for i in 1 2 3 4 5
 do
   echo "Looping ... number $i"
@@ -27,7 +25,6 @@ done
 
 echo
 
-echo "Bash version ${BASH_VERSION}..."
 for i in {0..10..2}
 do 
     echo "Welcome $i times"

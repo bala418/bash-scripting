@@ -8,17 +8,19 @@ else
 fi
 
 n=""
-
+m=0
 # read file char by char and print only numbers
 while read -n1 c; do
     if [ -n "$c" ] && [ "$c" -eq "$c" ] 2>/dev/null; then
         echo $c
         n="${n}${c}"
+        # increment m by c
+        m=$((m+c))
     fi
 done < $file
 
 
-
+echo $m
 
 echo $n
 
