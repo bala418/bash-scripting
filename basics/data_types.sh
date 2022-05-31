@@ -25,6 +25,7 @@ echo "String : $str"
 int=$((int + 1))
 int=$[int+1]
 int=$(expr $int + 1)
+int=`expr $int + 1`
 let int++
 echo "Integer : $int"
 
