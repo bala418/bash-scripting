@@ -1,19 +1,8 @@
 file=file.txt
-
-if [ -s $file ]
-then
-	echo "File size is not 0"
-else
-	echo "File size is 0"
-fi
-
-str=""
-
-while IFS= read -r line; do
+while read -r line; do
     fl=${line:0:1}
     echo "The first letter of each line is : $fl"
     str="${str}${fl}"
-    
 done < $file
 
 echo "Final string is $str "

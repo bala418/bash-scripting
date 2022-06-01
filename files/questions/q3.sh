@@ -11,10 +11,10 @@ n=""
 
 while read line; do
     for word in $line; do
-        if [ -n "$word" ] && [ "$word" -eq "$word" ] 2>/dev/null; then
-  		echo $word
-  		n="${n}${word}"
-	fi
+        if [[ $word =~ ^[0-9]+$ ]]
+        then
+            n="${n}${word}"
+        fi
     done
 done < $file
 

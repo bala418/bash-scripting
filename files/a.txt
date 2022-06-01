@@ -1,1 +1,6 @@
 Text file with content.
+It would contain numbers like 10, 20, 30 etc
+How about spe@@cial characters like !, @, #, $, % etc
+
+lol
+Ok 3

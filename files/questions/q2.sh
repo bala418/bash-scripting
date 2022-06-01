@@ -9,11 +9,10 @@ fi
 
 str=""
 i=0
-while IFS= read -r line; do
+while read -r line; do
     fl=${line:$i:1}
     str="${str}${fl}"
     i=$((i + 1))
-    
 done < $file
 
 echo "Final string is $str "
