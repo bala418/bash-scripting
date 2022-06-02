@@ -20,7 +20,6 @@ int main(){
             printf("%c\n", str1[i]);
             sleep(1);
         }
-        exit(0);
     }
     else {
         // parent process
@@ -32,7 +31,6 @@ int main(){
                 printf("%c\n", str2[i]);
                 sleep(1);
             }
-            exit(0);
         }
         else {
             // parent process
