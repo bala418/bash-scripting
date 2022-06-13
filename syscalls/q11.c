@@ -15,7 +15,6 @@ int main(){
     id=fork();
     id1=fork();
     id2=fork();
-    hello();
 
     if(id>0){
         wait(NULL);
