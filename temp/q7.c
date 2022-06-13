@@ -112,15 +112,10 @@ int main()
 				&& (full != 0)) {
 				consumer();
 			}
-
-			// Otherwise, print Buffer
-			// is empty
 			else {
 				printf("Buffer is empty!");
 			}
 			break;
-
-		// Exit Condition
 		case 3:
 			exit(0);
 			break;

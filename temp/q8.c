@@ -1,14 +1,7 @@
 void mergeSort(int a[], int l, int h)
 {
     int i, len=(h-l+1);
- 
-    // Using insertion sort for small sized array
-    if (len<=5)
-    {
-        insertionSort(a+l, len);
-        return;
-    }
- 
+
     pid_t lpid,rpid;
     lpid = fork();
     if (lpid<0)
@@ -39,11 +32,13 @@ void mergeSort(int a[], int l, int h)
     }
  
     int status;
- 
+
+
     // Wait for child processes to finish
     waitpid(lpid, &status, 0);
-    waitpid(rpid, &status, 0);
- 
+	waitpid(rpid, &status, 0);
+	printf("\nhi");
+
     // Merge the sorted subarrays
     merge(a, l, l+len/2-1, h);
 }
